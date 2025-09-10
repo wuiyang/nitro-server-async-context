@@ -78,12 +78,8 @@
     "unbuild": "^3.6.0"
   },
   "dependencies": {
-    "consola": "^3.4.2",
-    "defu": "^6.1.4",
     "mlly": "^1.8.0",
     "nuxt-nitro-module-kit": "^0.0.4",
-    "pathe": "^2.0.3",
-    "unctx": "^2.4.1",
-    "untyped": "^2.0.0"
+    "unctx": "^2.4.1"
   }
 }
