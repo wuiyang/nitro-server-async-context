@@ -1,0 +1,89 @@
+{
+  "name": "nitro-server-async-context",
+  "version": "0.0.0",
+  "description": "Provide async context outside of Nitro's event handler (HTTP event) lifecycle. Useful for Nitro tasks, Cloudflare Queues, Scheduled Handler, Email Workers, Tail Workers, and Cloudflare Trace.",
+  "keywords": [
+    "nuxt",
+    "nitro",
+    "nuxt",
+    "module",
+    "queue",
+    "async-context",
+    "context",
+    "useEvent",
+    "nitro-tasks",
+    "cloudflare-queue",
+    "cloudflare-scheduled-handler",
+    "cloudflare-email-workers"
+  ],
+  "homepage": "https://github.com/wuiyang/nitro-server-async-context#readme",
+  "bugs": {
+    "url": "https://github.com/wuiyang/nitro-server-async-context/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuiyang/nitro-server-async-context.git"
+  },
+  "license": "MIT",
+  "author": "Tan Wui Yang",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.mjs"
+    },
+    "./runtime/*": {
+      "types": "./dist/runtime/*.d.ts",
+      "import": "./dist/runtime/*.mjs",
+      "default": "./dist/runtime/*.mjs"
+    },
+    "./runtime": {
+      "types": "./runtime.d.ts",
+      "import": "./dist/runtime/index.mjs",
+      "default": "./dist/runtime/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "*.d.ts"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "unbuild",
+    "dev:prepare": "unbuild --stub",
+    "dev:nitro": "nitro dev --dir examples/nitro",
+    "dev:nuxt": "nuxt dev --cwd examples/nuxt",
+    "lint": "eslint --cache .",
+    "lint:fix": "eslint --cache . --fix",
+    "prepack": "npm run build",
+    "release": "npm run test && npm run build && changelogen --release && npm publish && git push --follow-tags",
+    "test": "npm run lint && npm run test:types",
+    "test:types": "tsc --noEmit --skipLibCheck"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "@nuxt/kit": "^3.16.0",
+    "@stylistic/eslint-plugin": "^5.2.2",
+    "@types/node": "^20.19.9",
+    "changelogen": "^0.6.2",
+    "eslint": "^9.32.0",
+    "eslint-plugin-perfectionist": "^4.15.0",
+    "globals": "^16.3.0",
+    "nitropack": "^2.12.4",
+    "nuxt": "^3.16.0",
+    "typescript-eslint": "^8.38.0",
+    "unbuild": "^3.6.0"
+  },
+  "dependencies": {
+    "consola": "^3.4.2",
+    "defu": "^6.1.4",
+    "mlly": "^1.8.0",
+    "nuxt-nitro-module-kit": "^0.0.4",
+    "pathe": "^2.0.3",
+    "unctx": "^2.4.1",
+    "untyped": "^2.0.0"
+  }
+}
