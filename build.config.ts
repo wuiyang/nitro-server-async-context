@@ -24,6 +24,6 @@ export default defineBuildConfig({
     "nitropack",
     "nitropack/runtime",
     "h3",
-    "#custom-server-async-context",
+    "#nitro-server-async-context",
   ],
 });

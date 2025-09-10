@@ -1,4 +1,4 @@
-import type { NitroServerAsyncContext } from "#custom-server-async-context";
+import type { NitroServerAsyncContext } from "#nitro-server-async-context";
 
 import { AsyncLocalStorage } from "node:async_hooks";
 import { createContext } from "unctx";

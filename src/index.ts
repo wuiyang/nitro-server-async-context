@@ -1,4 +1,4 @@
-import type { NitroServerAsyncContext } from "#custom-server-async-context";
+import type { NitroServerAsyncContext } from "#nitro-server-async-context";
 import type { NuxtNitroModule } from "nuxt-nitro-module-kit/types";
 
 import { fileURLToPath } from "mlly";

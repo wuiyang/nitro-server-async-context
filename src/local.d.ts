@@ -1,4 +1,4 @@
-declare module "#custom-server-async-context" {
+declare module "#nitro-server-async-context" {
   // eslint-disable-next-line @typescript-eslint/no-empty-object-type
   interface NitroServerAsyncContext {}
 }

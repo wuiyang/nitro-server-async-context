@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import type { NitroServerAsyncContext } from "#custom-server-async-context";
+import type { NitroServerAsyncContext } from "#nitro-server-async-context";
 
 import { useNitroApp } from "nitropack/runtime";
 

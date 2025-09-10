@@ -1,4 +1,4 @@
-declare module "#custom-server-async-context" {
+declare module "#nitro-server-async-context" {
   interface NitroServerAsyncContext {
     testing: true;
   }
