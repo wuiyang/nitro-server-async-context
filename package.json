@@ -64,6 +64,7 @@
     "test:types": "tsc --noEmit --skipLibCheck"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250910.0",
     "@eslint/js": "^9.32.0",
     "@nuxt/kit": "^3.16.0",
     "@stylistic/eslint-plugin": "^5.2.2",
