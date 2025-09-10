@@ -1,8 +1,10 @@
 import type { NitroServerAsyncContext } from "#custom-server-async-context";
+import type { NuxtNitroModule } from "nuxt-nitro-module-kit/types";
 
 import { fileURLToPath } from "mlly";
 import { defineNuxtNitroModule } from "nuxt-nitro-module-kit";
 import { addTypeTemplate } from "nuxt-nitro-module-kit/utils";
+
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface NitroServerAsyncContextConfig {}
 
@@ -57,4 +59,4 @@ export default defineNuxtNitroModule<NitroServerAsyncContextConfig>({
       ].join("\n"),
     });
   },
-});
+}) as NuxtNitroModule<NitroServerAsyncContextConfig, Partial<NitroServerAsyncContextConfig>>;
