@@ -1,5 +1,5 @@
 declare module "#custom-server-async-context" {
-  interface CustomServerAsyncContext {
+  interface NitroServerAsyncContext {
     testing: true;
   }
 }

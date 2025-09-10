@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import type { CustomServerAsyncContext } from "#custom-server-async-context";
+import type { NitroServerAsyncContext } from "#custom-server-async-context";
 
 import { useNitroApp } from "nitropack/runtime";
 
@@ -11,7 +11,7 @@ export async function runInAsyncContext<T extends (...args: any[]) => any>(
 ): Promise<Awaited<ReturnType<T>>> {
   const nitro = useNitroApp();
   return executeServerAsyncContextInternal(
-    await nitro.hooks.callHook("async-context:create", {} as CustomServerAsyncContext),
+    await nitro.hooks.callHook("async-context:create", {} as NitroServerAsyncContext),
     () => fn(...args),
   );
 }
