@@ -80,7 +80,7 @@
   },
   "dependencies": {
     "mlly": "^1.8.0",
-    "nuxt-nitro-module-kit": "^0.0.5",
+    "nuxt-nitro-module-kit": "^0.0.6",
     "unctx": "^2.4.1"
   }
 }
