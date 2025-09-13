@@ -1,5 +1,6 @@
 import type { ExecutionContext, MessageBatch } from "@cloudflare/workers-types";
 
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface CloudflareEnv {}
 
 export interface CloudflareContext {
@@ -19,6 +20,7 @@ export interface CloudflareQueueHookArgs<T> {
   context: ExecutionContext;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface CloudflareQueueConsumerNames {
 }
 

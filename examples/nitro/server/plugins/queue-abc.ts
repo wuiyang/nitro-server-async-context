@@ -1,4 +1,4 @@
-declare module "~/plugins/cloudflare-queue" {
+declare module "./cloudflare-queue" {
   interface CloudflareQueueNames {
     EMAIL_INVOICE: EmailInvoiceQueueMessage;
   }
