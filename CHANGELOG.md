@@ -1,6 +1,28 @@
 # Changelog
 
 
+## v0.0.2
+
+[compare changes](https://github.com/wuiyang/nitro-server-async-context/compare/v0.0.1...v0.0.2)
+
+### 🩹 Fixes
+
+- Eslint issue and path ([e7b6f6c](https://github.com/wuiyang/nitro-server-async-context/commit/e7b6f6c))
+
+### 📖 Documentation
+
+- Added example ([dfa76e7](https://github.com/wuiyang/nitro-server-async-context/commit/dfa76e7))
+- Improved example ([5ffbc40](https://github.com/wuiyang/nitro-server-async-context/commit/5ffbc40))
+
+### 🏡 Chore
+
+- **release:** V0.0.1 ([75d9715](https://github.com/wuiyang/nitro-server-async-context/commit/75d9715))
+- Updated nuxt-nitro-module-kit ([c4218c5](https://github.com/wuiyang/nitro-server-async-context/commit/c4218c5))
+
+### ❤️ Contributors
+
+- Wuiyang <wuiyang@live.com>
+
 ## v0.0.1
 
 

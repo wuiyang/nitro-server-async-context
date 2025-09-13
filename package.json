@@ -1,6 +1,6 @@
 {
   "name": "nitro-server-async-context",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Provide async context outside of Nitro's event handler (HTTP event) lifecycle. Useful for Nitro tasks, Cloudflare Queues, Scheduled Handler, Email Workers, Tail Workers, and Cloudflare Trace.",
   "keywords": [
     "nuxt",
